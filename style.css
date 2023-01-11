@@ -306,5 +306,36 @@ body {
     width: 20px;
     height: 20px;
     background: linear-gradient(225deg, #fff 0%, #fff 50%, transparent 50%, transparent);
+}
 
+.chatBoxInput {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #f0f0f0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chatBoxInput ion-icon {
+    cursor: pointer;
+    font-size: 1.8em;
+    color: #51585c;
+}
+
+.chatBoxInput ion-icon:nth-child(1) {
+    margin-right: 15px;
+}
+
+.chatBoxInput input {
+    position: relative;
+    width: 90%;
+    border: none;
+    outline: none;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1em;
 }
