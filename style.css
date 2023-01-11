@@ -223,3 +223,88 @@ body {
     align-items: center;
     font-size: 0.75em;
 }
+
+.imgText {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.imgText h4 {
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.imgText h4 span {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.chatBox {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 120px);
+    padding: 50px;
+    overflow-y: auto;
+}
+
+.message {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.message p {
+    position: relative;
+    right: 0;
+    text-align: right;
+    max-width: 65%;
+    padding: 12px;
+    background: #dcf8c6;
+    border-radius: 7px;
+    font-size: 0.9em;
+}
+
+.message p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #dcf8c6 0%, #dcf8c6 50%, transparent 50%, transparent);
+}
+
+.message p span {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85em;
+    opacity: 0.5;
+}
+
+.myMessage {
+    justify-content: flex-end;
+}
+
+.friendMessage {
+    justify-content: flex-start;
+}
+
+.friendMessage p {
+    background: #fff;
+    text-align: left;
+}
+
+.message.friendMessage p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(225deg, #fff 0%, #fff 50%, transparent 50%, transparent);
+
+}
